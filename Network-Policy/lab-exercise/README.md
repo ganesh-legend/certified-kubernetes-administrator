@@ -12,7 +12,7 @@ kubectl expose deployment nginx --port=80
 kubectl get svc,pod
 ```
 
-This creates a deployment of the nginx image and exposes it as a service listening on port 80. The kubectl get command is used to confirm that both the service and pod were created successfully.
+This creates a deployment of the nginx image and exposes it as a service listening on port 80. The kubectl get command is used to confirm that both the service and pod were created successfully. It automatically creates label for deployment. Here, app:nginx label will be created for nginx deployment.
 
 2. Test the service by accessing it from another Pod:
 ```
